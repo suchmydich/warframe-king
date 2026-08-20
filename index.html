@@ -1,5 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head><title>我的测试网站</title></head>
-<body><h1>Hello World! 网站创建成功了！</h1></body>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩家留言板</title>
+    <style>
+        body {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #333;
+        }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .intro { color: #666; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 玩家留言板</h1>
+    <p class="intro">欢迎来到这里！在下方登录 GitHub 即可留下一行字，留言会永久保存。</p>
+
+    <!-- 留言板嵌入区域 -->
+    <div class="comments-container">
+        <script src="https://giscus.app/client.js"
+                data-repo="你的GitHub用户名/你的仓库名"
+                data-repo-id="申请后获取的Repo-ID"
+                data-category="Announcements"
+                data-category-id="申请后获取的Category-ID"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="preferred_color_scheme"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </div>
+
+</body>
 </html>
